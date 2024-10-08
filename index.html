@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass 1 Assembler with OPTAB and Intermediate File</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pass 1 Assembler</h1>
+        
+        <textarea id="assemblyCode" rows="10" placeholder="Enter your assembly code here..."></textarea>
+        <button id="pass1Button">EXECUTE PASS 1</button>
+
+        <h2>Symbol Table (SYMTAB)</h2>
+        <table id="symbolTable">
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Symbol table will be populated here -->
+            </tbody>
+        </table>
+
+        <h2>Operation Table (OPTAB)</h2>
+        <table id="optab">
+            <thead>
+                <tr>
+                    <th>Instruction</th>
+                    <th>Opcode</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- OPTAB will be populated here -->
+            </tbody>
+        </table>
+
+        <h2>Intermediate File</h2>
+        <div id="intermediateFileContainer" class="intermediate-file">
+            <!-- Intermediate file content will be displayed here -->
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
